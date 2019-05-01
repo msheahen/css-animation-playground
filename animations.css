@@ -1,0 +1,210 @@
+body{
+  text-align:center;
+  padding:10px;
+  background:#fdfdfd;
+}
+
+.card{
+  max-width:500px;
+  padding:50px;
+  margin:0 auto;
+  background:#fff;
+  box-shadow:1px 0px 10px 5px rgba(10, 10, 10, 0.4);
+}
+
+.card.neon, .card.twinkle, .card.retro{
+  background:black;
+}
+
+
+
+.card.pulse{
+  background:darkgreen;
+}
+
+.animation-title{
+  font-size:50px;
+  padding:20px;
+
+}
+
+.neon-effect{
+  color:violet;
+  font-size:60px;
+  font-family:cursive;
+}
+.neon-effect:hover{
+
+  color: #ffffff;
+  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+
+}
+
+.fade-effect{
+  background:black;
+  opacity:1;
+  height:50px;
+  margin:auto;
+  width:50px;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.fade-effect:hover{
+  opacity:0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.pulser{
+  margin:auto;
+  width:100px;
+  display:block;
+  border-radius:50%;
+  height:100px;
+  position:relative;
+  background-color:white;
+  -webkit-animation: pulse 2.3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+
+.twinkle-effect{
+  position:relative;
+  height:200px;
+  width:100%;
+  margin:auto;
+}
+.star{
+    color:black;
+    position:absolute;
+  -webkit-animation: light-star 2.3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+#star1{
+  -webkit-animation-delay: 1s;
+  left:5%;
+  top:5%;
+}
+#star2{
+  -webkit-animation-delay: -0.2s;
+  left:22%;
+  top:33%;
+}
+#star3{
+  -webkit-animation-delay: 1.5s;
+  left:92%;
+  top:55%;
+}
+#star4{
+  -webkit-animation-delay: 0.6s;
+  left:75%;
+  top:11%;
+}
+#star5{
+  -webkit-animation-delay: -1.6s;
+  left:7%;
+  top:79%;
+}
+#star6{
+  -webkit-animation-delay: 1.1s;
+  left:56%;
+  top:90%;
+}
+#star7{
+  -webkit-animation-delay: -2.6s;
+  left:97%;
+  top:96%;
+}
+#star8{
+  -webkit-animation-delay: 3.1s;
+  left:10%;
+  top:30%;
+}
+
+.retro-container{
+  height:300px;
+  width:100%;
+  border:2px solid grey;
+  position:relative;
+}
+.retro-effect{
+  height:50px;
+  width:50px;
+  border-radius:50%;
+  background-color:blue;
+  display: block;
+  position: absolute;
+  -webkit-animation: moveX 5s linear 0s infinite alternate, moveY 6.3s linear 0s infinite alternate;
+  -moz-animation: moveX 5s linear 0s infinite alternate, moveY 6.3s linear 0s infinite alternate;
+  -o-animation: moveX 5s linear 0s infinite alternate, moveY 6.3s linear 0s infinite alternate;
+  animation: moveX 5s linear 0s infinite alternate, moveY 6.3s linear 0s infinite alternate ;
+}
+
+
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: calc(100% - 50px); }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: calc(100% - 50px); }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: calc(100% - 0px); }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: calc(100% - 50px); }
+}
+@-webkit-keyframes moveY {
+  from { top: calc(100% - 50px); } to { top: 0; }
+}
+@-moz-keyframes moveY {
+  from { top: calc(100% - 50px); } to { top: 0; }
+}
+@-o-keyframes moveY {
+  from { top: calc(100% - 50px); } to { top: 0; }
+}
+@keyframes moveY {
+  from { top: calc(100% - 50px); } to { top: 0; }
+}
+}
+@-moz-keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
+
+@keyframes neon6{
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    30% { transform: scale(1); }
+    40% { transform: scale(1.08); }
+    50% { transform: scale(1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.05); }
+    80% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes light-star{
+  0%{
+    color:black;
+  }
+  50%{
+    color:#fff;
+  }
+  100%{
+    color:black;
+  }
+}
